@@ -4,13 +4,15 @@ import socket
 app = Flask(__name__)
 
 @app.route('/')
-
 def get_pod_info():
     # Get the hostname of the pod
     hostname = socket.gethostname()
 
     # Get the IP address of the pod
-    pod_ip = socket.getaddrinfo(hostname)
+    try:
+        pod_ip = socket.gethostbyname(hostname)
+    except socket.gaierror:
+        pod_ip = "Unable to resolve IP address"
 
     return f"Hostname: {hostname}\nPod IP Address: {pod_ip}"
 
