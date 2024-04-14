@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - image: sami4rhimi/flask-app-image:v01
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: podinfo
         resources:
           limits:
