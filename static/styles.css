@@ -7,7 +7,7 @@ body {
 }
 
 .info-box {
-    font-size: 36px; /* Larger font size for the info boxes */
+    font-size: 56px; /* Larger font size for the info boxes */
     color: #333; /* Dark text color */
     background-color: #fff; /* White background color for info boxes */
     padding: 20px;
