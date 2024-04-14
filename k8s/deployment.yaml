@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: podinfo
+  name: podinfo
+  namespace: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: podinfo
+  template:
+    metadata:
+      labels:
+        app: podinfo
+    spec:
+      containers:
+      - image: sami4rhimi/flask-app-image:v01
+        imagePullPolicy: IfNotPresent
+        name: podinfo
+        resources:
+          limits:
+            cpu: 250m
+            memory: 512Mi
+          requests:
+            cpu: 100m
+            memory: 256Mi

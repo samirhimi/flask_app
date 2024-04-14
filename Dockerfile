@@ -4,7 +4,7 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy only the necessary files into the container
+# Copy the necessary files into the container
 
 COPY app.py /app/
 COPY templates /app/templates/
