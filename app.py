@@ -1,9 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template, jsonify
 import socket
 
 app = Flask(__name__)
 
 @app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/api/podinfo')
 def get_pod_info():
     # Get the hostname of the pod
     hostname = socket.gethostname()
@@ -14,8 +18,7 @@ def get_pod_info():
     except socket.gaierror:
         pod_ip = "Unable to resolve IP address"
 
-    return f"Hostname: {hostname}\nPod IP Address: {pod_ip}"
+    return jsonify(hostname=hostname, ip=pod_ip)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
-    
+    app.run(debug=True, host='0.0.0.0')
