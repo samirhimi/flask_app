@@ -1,17 +1,15 @@
 body {
     background-color: #3498db; /* Blue background color */
-}
-
-.title {
-    font-size: 36px; /* Larger font size for the title */
-    color: #fff; /* White text color */
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .info-box {
-    font-size: 24px; /* Larger font size for the info boxes */
+    font-size: 36px; /* Larger font size for the info boxes */
     color: #333; /* Dark text color */
     background-color: #fff; /* White background color for info boxes */
-    margin: 10px 0;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 10px;
 }
