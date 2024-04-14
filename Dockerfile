@@ -6,8 +6,6 @@ WORKDIR /app
 
 # Copy only the necessary files into the container
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py /app/
 COPY templates /app/templates/
 COPY static /app/static/
