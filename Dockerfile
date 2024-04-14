@@ -12,6 +12,7 @@ COPY static /app/static/
 
 # Install Flask and any other dependencies
 RUN pip install flask
+RUN pip install flask_cors
 
 # Expose the Flask app's port
 EXPOSE 5000
