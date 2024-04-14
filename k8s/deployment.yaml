@@ -16,7 +16,7 @@ spec:
         app: podinfo
     spec:
       containers:
-      - image: sami4rhimi/flask-app-image:v01
+      - image: sami4rhimi/flask-app-image
         imagePullPolicy: Always
         name: podinfo
         resources:
