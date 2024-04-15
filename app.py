@@ -4,7 +4,8 @@ import psutil
 
 app = Flask(__name__)
 
-@app.route('/api/podinfo')
+@app.route('/')
+
 def index():
 
     # Get the hostname of the pod
