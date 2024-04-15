@@ -10,7 +10,7 @@ body {
 
 title {
     font-size: 48px; /* Larger font size for the info boxes */
-    color: #333; /* Dark text color */
+    color: #d10c0c; 
     background-color: #fff; /* White background color for info boxes */
     padding: 20px;
     border-radius: 10px;
@@ -18,7 +18,7 @@ title {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #d10c0c;
 }
 
 p {
