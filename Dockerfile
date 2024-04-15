@@ -11,7 +11,7 @@ COPY templates /app/templates/
 COPY static /app/static/
 
 # Install Flask and any other dependencies
-RUN pip install flask
+RUN pip install flask psutil
 
 # Expose the Flask app's port
 EXPOSE 5000
