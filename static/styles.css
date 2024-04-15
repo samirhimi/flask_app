@@ -1,5 +1,7 @@
 body {
-    background-color: #f2f2f2;
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
     display: flex;
     justify-content: center;
     align-items: flex-start;
