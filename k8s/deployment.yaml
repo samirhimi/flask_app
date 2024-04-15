@@ -6,7 +6,7 @@ metadata:
   name: podinfo
   namespace: test
 spec:
-  replicas: 2
+  replicas: 6
   selector:
     matchLabels:
       app: podinfo
