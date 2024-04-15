@@ -1,7 +1,16 @@
 ---
-- name: "Build container with ansible"
+- name: "Build image with ansible"
   hosts: localhost
   tasks:
+    - name: add file to git repo
+      command: git add .
+
+    - name: commit changes
+      command: git commit -m "refine the code again"
+
+    - name: push changes
+      command: git push origin main
+      
     - name: stop running container
       command: docker stop podinfo
       ignore_errors: true
