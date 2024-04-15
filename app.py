@@ -1,9 +1,10 @@
 from flask import Flask, render_template, jsonify
 import socket
+import psutil
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api/podinfo')
 def index():
 
     # Get the hostname of the pod
