@@ -18,7 +18,7 @@ title {
 
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 56px;
     color: #0fd10c;
     padding: 20px;
 }
@@ -26,6 +26,7 @@ h1 {
 p {
     margin: 10px 0;
     font-size: 48px;
+    font-weight: bold;
     line-height: 1.5;
     color: #0fd10c;
     text-align: center;
