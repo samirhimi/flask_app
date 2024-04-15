@@ -6,6 +6,6 @@ spec:
   selector:
     app: podinfo
   ports:
-  - port: 80
+  - port: 5000
     targetPort: 5000
   type: LoadBalancer
