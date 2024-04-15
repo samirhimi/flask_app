@@ -1,11 +1,12 @@
 body {
-    background-image: url('background.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    
 }
 
 title {
@@ -25,4 +26,6 @@ p {
     margin: 10px 0;
     font-size: 32px;
     line-height: 1.5;
+    color: #d10c0c;
+    text-align: center;
 }
