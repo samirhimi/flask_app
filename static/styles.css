@@ -10,21 +10,22 @@ body {
 }
 
 title {
-    font-size: 48px; /* Larger font size for the info boxes */
-    color: #d10c0c; 
-    background-color: #fff; /* White background color for info boxes */
+    font-size: 48px; 
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+    font-size: 48px;
     color: #0fd10c;
+    padding: 20px;
 }
 
 p {
     margin: 10px 0;
-    font-size: 32px;
+    font-size: 48px;
     line-height: 1.5;
     color: #0fd10c;
     text-align: center;
