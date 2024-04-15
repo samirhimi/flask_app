@@ -14,7 +14,7 @@ COPY static /app/static/
 RUN pip install flask
 
 # Expose the Flask app's port
-EXPOSE 5000
+EXPOSE 8080
 
 # Run the Flask app when the container starts
 CMD ["python", "app.py"]

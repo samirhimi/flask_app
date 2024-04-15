@@ -2,7 +2,7 @@
 - name: "Build image with ansible"
   hosts: localhost
   tasks:
-    - name: add file to git repo
+    - name: add files to git repo
       command: git add .
 
     - name: commit changes
