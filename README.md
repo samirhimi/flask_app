@@ -1,1 +1,1 @@
-# flask_app to print pod info
+Print system info
